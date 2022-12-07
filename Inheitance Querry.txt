@@ -1,0 +1,14 @@
+
+create table student(id varchar(20), name varchar(20),dept varchar(20));
+
+create table manager(dept varchar(20) ,salary int ) inherits (student);
+
+insert into student(id, name ,dept ) 
+values(2,'prasad','entc'),
+(3,'pratik','civil');
+
+insert into manager(dept, salary ) 
+values('prasad',50000),
+('pratik',80000);
+
+select * from only manager;
